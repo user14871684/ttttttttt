@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.02rem;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container > h1 {
+  color: #0078d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container > h2 {
+  color: #0078d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 700px;
+  display: flex;
+  gap: 10px;
+}
+.form > input {
+  padding: 10px;
+  width: 345px;
+  height: 100px;
+  border: 1px solid black;
+}
+.child {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.child > h1 {
+  border: 1px solid black;
+  width: 345px;
+  height: 100px;
+  padding: 10px;
+}
+.child > button {
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  color: black;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 10px;
+}
+.btn {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn > button {
+  width: 200px;
+  cursor: pointer;
+  height: 30px;
+  color: black;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width:400px) {
+    .container {
+        width: 400px;
+    }
+    .form {
+        width: 400px;
+        flex-direction: column;
+    }
+    .form > input {
+        width: 400px;
+    }
+    .child > h1 {
+        width: 400px;
+    }
+    .btn {
+        width: 400px;
+    }
+    .btn > button {
+        width: 180px;
+    }
+}
